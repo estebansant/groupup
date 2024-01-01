@@ -56,7 +56,7 @@ const EventDetails = async ({ params: { id }}: SearchParamProps) => {
 
             <div className='p-regular-20 flex items-center gap-3'>
               <Image src={locationLogo} alt="location" width={32} height={32}/>
-              <p className='p-madium-16 lg:p-regular-20'>{event.loaction}</p>
+              <p className='p-madium-16 lg:p-regular-20'>{event.location}</p>
             </div>
           </div>
 
