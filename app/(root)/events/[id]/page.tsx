@@ -6,6 +6,7 @@ import calendarLogo from "./../../../../public/assets/icons/calendar.svg";
 import locationLogo from "./../../../../public/assets/icons/location.svg";
 import { formatDateTime } from '@/lib/utils';
 import { Collection } from '@/components/shared/Collection';
+import { CheckoutButton } from "./../../../../components/shared/CheckoutButton"
 
 const EventDetails = async ({ params: { id }, searchParams}: SearchParamProps) => {
   const event = await getEventById(id);
@@ -48,6 +49,9 @@ const EventDetails = async ({ params: { id }, searchParams}: SearchParamProps) =
             </div>
 
             {/* Checkout Button */}
+            <CheckoutButton 
+              event={event}
+            />
 
             <div className='flex flex-col gap-5'>
               <div className='flex gap-2 md:gap-3'>
